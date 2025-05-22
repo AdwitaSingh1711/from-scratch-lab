@@ -67,7 +67,25 @@ output_size = vocab_size
 
 rnn = RNN(input_size, hidden_size, output_size)
 optimizer = torch.optim.Adam(rnn.parameters(), lr=0.01)
-loss_fn = nn.CrossEntropyLoss()
+# loss_fn = nn.CrossEntropyLoss()
+
+def compute_cross_entropy_loss(output, target):
+  """
+  output: (seq_len, vocab_size) we removed batch_size, remember?
+  target: (seq_len)
+  """
+  total_loss = 0.0
+
+  for t in range(target.size(0)):
+    logits = output[t]
+    target_index = target[t]
+
+    zy = logits[target_index]
+    log_sum_exp = torch.logsumexp(logits, dim=0)
+    loss_t = -(zy - log_sum_exp)
+    total_loss += loss_t
+
+  return total_loss/target.size(0)
 
 target = torch.tensor([vocab[words[t+1]]for t in range(seq_len-1)])
 
@@ -79,7 +97,8 @@ for epoch in range(num_epochs):
   # output = output.view(-1, vocab_size)
   output = output.squeeze(1)
   
-  loss = loss_fn(output,target)
+  # loss = loss_fn(output,target)
+  loss = compute_cross_entropy_loss(output, target)
   loss.backward()
   optimizer.step()
 
