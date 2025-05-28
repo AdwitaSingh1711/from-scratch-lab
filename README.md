@@ -4,9 +4,9 @@
 
 **X from Scratch** is a collection of from-scratch implementations of machine learning models, frameworks, and techniques using PyTorch (for now).
 
-## 📚 Implementations
+## Implementations
 
-### ✅ Currently Available
+### Currently Available
 
 1. **Vanilla RNN from Scratch**  
    - Implemented using PyTorch tensor operations
@@ -20,12 +20,6 @@
    - Gradients computed and applied without `autograd` for educational clarity
    - [Explanation](https://selective-jersey-d55.notion.site/How-To-Write-The-Backward-Pass-of-any-Network-20025c8ce8de802cb865ea357c9b2414?pvs=4)
 
-3. **Byte Pair Encoding Implementationk**  
-   - Manually implemented the byte pair endoding technique
-   - Tbh there is nothing more.
-   - [Explanation](https://selective-jersey-d55.notion.site/Implementing-BPE-13f25c8ce8de807eb42bd85953092842?pvs=4)
-
-
 ### 🧪 Planned Additions
 
 - Sentence Piece
@@ -33,7 +27,7 @@
 - Transformer encoder/decoder blocks  
 - Graph Neural Networks  
 
-## 🚀 Getting Started
+## Getting Started
 
 Clone the repo:
 
