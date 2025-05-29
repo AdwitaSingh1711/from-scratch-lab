@@ -1,7 +1,5 @@
 # Scratch Lab
 
-# X from Scratch
-
 **X from Scratch** is a collection of from-scratch implementations of machine learning models, frameworks, and techniques using PyTorch (for now).
 
 ## Implementations
@@ -29,7 +27,7 @@
    - Implemented DoLa's generation loop for auto-regressive generation for a random model
    - [OG Paper](https://arxiv.org/abs/2309.03883)
 
-### 🧪 Planned Additions
+### Planned Additions
 
 - Sentence Piece
 - Adam Optimizer built manually  
