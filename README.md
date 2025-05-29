@@ -17,8 +17,17 @@
 2. **Backpropagation of a Random Network**  
    - Manually built feedforward network with custom backpropagation
    - Fully connected layers with ReLU and Tanh activations implemented via basic PyTorch ops
-   - Gradients computed and applied without `autograd` for educational clarity
+   - Gradients computed and applied without `autograd` for clarity
    - [Explanation](https://selective-jersey-d55.notion.site/How-To-Write-The-Backward-Pass-of-any-Network-20025c8ce8de802cb865ea357c9b2414?pvs=4)
+
+3. **Byte Pair Encoding**  
+   - Implemented the BPE algorithm as a prerequisite to Sentence Piece
+   - That is it lol there isn't much to it
+   - [Explanation](https://selective-jersey-d55.notion.site/Implementing-BPE-13f25c8ce8de807eb42bd85953092842?pvs=4)
+
+4. **Decoding By Contrasting Layer (DoLa)**
+   - Implemented DoLa's generation loop for auto-regressive generation for a random model
+   - [OG Paper](https://arxiv.org/abs/2309.03883)
 
 ### 🧪 Planned Additions
 
