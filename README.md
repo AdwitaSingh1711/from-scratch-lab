@@ -1,6 +1,6 @@
 # Scratch Lab
 
-**X from Scratch** is a collection of from-scratch implementations of machine learning models, frameworks, and techniques using PyTorch (for now).
+**Scratch Lab** is a collection of from-scratch implementations of machine learning models, frameworks, and techniques using PyTorch (for now).
 
 ## Implementations
 
@@ -27,10 +27,14 @@
    - Implemented DoLa's generation loop for auto-regressive generation for a random model
    - [OG Paper](https://arxiv.org/abs/2309.03883)
 
+5. **Adam Optimizer**
+   - Implemented the adam optimizer's algorithm from the [Paper](https://arxiv.org/abs/1412.6980)
+   - Used a RandomNet whose BAckward pass was written for [backprop.py](https://github.com/AdwitaSingh1711/from-scratch-lab/blob/master/backprop.py)
+   - [Explanation of the Math (still a work in progress tbh)](https://www.notion.so/Understanding-ADAM-Optimizer-20425c8ce8de8060a7a1eac0080e82f9?source=copy_link)
+
 ### Planned Additions
 
 - Sentence Piece
-- Adam Optimizer built manually  
 - Transformer encoder/decoder blocks  
 - Graph Neural Networks  
 
@@ -39,8 +43,13 @@
 Clone the repo:
 
 ```bash
-git clone https://github.com/yourusername/x-from-scratch.git
-cd x-from-scratch
+git clone https://github.com/AdwitaSingh1711/from-scratch-lab.git
+cd from-scratch-lab
+```
+
+## Contributing 
+
+If you have any questions or suggestions for Scratch Lab, please open an issue or submit a pull request. Your contribution is greatly appreciated!
 
 
 
